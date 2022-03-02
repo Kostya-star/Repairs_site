@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-cli": "^2.3.0"
+  },
+  "name": "imthebest",
+  "description": "Сайт компании по ремонту квартир",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kostya-star/imthebest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kostya-star/imthebest/issues"
+  },
+  "homepage": "https://github.com/Kostya-star/imthebest#readme"
+}
