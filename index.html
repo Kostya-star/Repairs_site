@@ -4,17 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="css/animate.min.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
   <link rel="stylesheet" href="css/style.css">
+  
   <title>Document</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
       <div class="menu">
-        <div class="logo menu__logo">Repair Design Project</div>
+        <div class="logo menu__logo wow animate__pulse" data-wow-duration="2s">Repair Design Project</div>
         <nav class="nav menu__nav">
           <a href="#" class="nav__item">Главная</a>
           <a href="#" class="nav__item">Проекты</a>
@@ -25,7 +31,7 @@
         </nav>
         <div class="contacts menu__contacts">
           <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-          <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+          <button class="button contacts__button button--primary wow animate__pulse infinite" data-toggle="modal">Заказать звонок</button>
         </div>
       </div>
     </div>
@@ -56,9 +62,95 @@
               <h2 class="projects__section-title__heading section-title__heading section-title__heading--primary">Завершенные <span class="section-title__word">проекты</span></h2>
               <p class="section-title__text">На сайте представлена ​​лишь небольшая часть работ, выполняемых нашей компанией. За 14 лет работы на строительном рынке мы осчастливили более 1000 семей</p>
             </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Город:</h3>
+                    <span class="swiper-slide__value">Ростов-на-дону</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Площадь:</h3>
+                    <span class="swiper-slide__value">81 м2</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                    <span class="swiper-slide__value">3,5 месяца</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Стоимость:</h3>
+                    <span class="swiper-slide__value">По запросу</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Город:</h3>
+                    <span class="swiper-slide__value">Ростов-на-дону</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Площадь:</h3>
+                    <span class="swiper-slide__value">81 м2</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                    <span class="swiper-slide__value">3,5 месяца</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Стоимость:</h3>
+                    <span class="swiper-slide__value">По запросу</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Город:</h3>
+                    <span class="swiper-slide__value">Ростов-на-дону</span>
+                  </div>
+                  <!-- /.swiper-slide__text -->
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Площадь:</h3>
+                    <span class="swiper-slide__value">81 м2</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                    <span class="swiper-slide__value">3,5 месяца</span>
+                  </div>
+                  <div class="swiper-slide__text">
+                    <h3 class="swiper-slide__heading">Стоимость:</h3>
+                    <span class="swiper-slide__value">По запросу</span>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
           <!-- /.col-50 -->
-          <div class="col-50"></div>
+          <div class="col-50">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper swiper-no-swiping">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="../img/project.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/project.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="../img/project.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- /.col-50 -->
         </div>
         <!-- /.row -->
@@ -331,6 +423,9 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- .modal -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
   <!-- <script>alert('HEY SUP NIGGA! GLAD TO SEE YOUR ASS HERE! Click "OK" to continue right away or get the fuck out of here YOU MISERABLE SORRY SON OF A BITCH!                                                                                         ↓↓↓↓↓↓↓')</script> -->
 </body>
