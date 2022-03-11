@@ -44,21 +44,41 @@ $(document).ready(function () {
   bullets.css('left', prev.width() + 10)
 
   new WOW().init();
+
+//Валидация формыыы
+
+$('.modal__form').validate({
+  errorClass: "invalid",
+  rules: {
+    // строчное правило
+    userName: {
+      required: true,
+      minlength: 2
+    },
+    userPhone: "required",
+    // правило объект
+    userEmail: {
+      required: true,
+      email: true
+    }
+  }, // sms
+  messages: {
+    userName: {
+      required: "Имя обязательно",
+      minlength: "Имя не короче двух букв"
+    },
+    userPhone: "Телефон обязателен",
+    userEmail: {
+      required: "Укжите ваш Email",
+      email: "Введите в формате: name@domain.com"
+    }
+  }
+});
+
+//маска для телефона
+$('[type=tel]').mask('+373(000) 0-00-00', {placeholder: "+373(___) _-__-__"});
+
 });
 
 
-
-// var next = document.getElementsByClassName('.swiper-button-next');
-// var prev = document.getElementsByClassName('swiper-button-prev');
-// var bullets = document.getElementsByClassName('.swiper-pagination');
-
-// next.css('left', prev.width() + 10 + bullets.width() +10)
-// bullets.css('left', prev.width() + 10)
-
-var next = $('.swiper-button-next');
-var prev = $('swiper-button-prev');
-var bullets = $('.swiper-pagination');
-
-next.css('left', prev.width() + 10 + bullets.width() +10)
-bullets.css('left', prev.width() + 10)
 
