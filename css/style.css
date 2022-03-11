@@ -390,7 +390,7 @@ template {
   color: white;
   padding: 0.5rem 0;
 }
-.input::placeholder {
+.input--light::placeholder {
   color: white;
 }
 
@@ -404,6 +404,7 @@ template {
 .policy__label {
   display: flex;
   align-items: center;
+  font-size: 1.142rem;
 }
 .policy__label::before {
   content: "";
@@ -413,6 +414,9 @@ template {
   border-radius: 1px;
   cursor: pointer;
   margin-right: 0.64rem;
+}
+.policy__label--center {
+  justify-content: center;
 }
 
 .container {
@@ -463,6 +467,9 @@ img {
 }
 .section-title--left {
   text-align: left;
+}
+.section-title--light {
+  color: white;
 }
 .section-title__heading {
   font-family: "Yeseva One", cursive;
@@ -674,6 +681,81 @@ img {
   padding: 17px 44px;
 }
 
+.control__section-title {
+  margin-bottom: 2.214rem;
+  margin-top: -30rem;
+}
+.control__video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 4.42rem;
+  position: relative;
+  max-width: 58.357rem;
+  min-height: 31rem;
+  background: #131313 url("../img/video-img.jpg") no-repeat center;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.15);
+}
+.control__video::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.8);
+}
+.control__text {
+  max-width: 40.785rem;
+  margin: auto;
+  text-align: center;
+  font-size: 1.42rem;
+  line-height: 2.42rem;
+  margin-bottom: 4.285rem;
+}
+.control__text::before {
+  content: "";
+  display: block;
+  margin: auto;
+  margin-bottom: 1.9rem;
+  width: 3.92rem;
+  height: 1.5px;
+  background-color: #E3B873;
+  border-radius: 30px;
+}
+.control__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 55rem;
+  margin: auto;
+}
+.control__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.control__label {
+  margin-bottom: -6px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.control__input--dark {
+  color: #131313;
+}
+.control__button {
+  padding: 1.286rem 4.64rem;
+}
+.control__policy {
+  flex-basis: 100%;
+  margin-top: 1rem;
+}
+.control__policy__label {
+  justify-content: center;
+}
+
+.video__play {
+  position: relative;
+}
+
 .types__section-title {
   margin-bottom: 2rem;
 }
@@ -735,6 +817,10 @@ img {
   padding: 1.21rem 5.5rem 1.21rem 2.35rem;
 }
 
+.projects {
+  padding-bottom: 30rem;
+}
+
 .swiper-slide {
   display: flex;
   flex-wrap: wrap;
@@ -784,6 +870,59 @@ img {
 .projects__section-title__heading {
   line-height: 2.64rem;
   font-size: 1.92rem;
+}
+
+.footer {
+  padding-top: 3rem;
+  background: #131313 url("../img/footer-bg.jpg") center/cover no-repeat;
+}
+.footer__wrap {
+  background-color: #181818;
+  max-width: 63.07rem;
+  margin: auto;
+  margin-bottom: 3.714rem;
+  padding: 2.5rem;
+}
+.footer__title {
+  text-transform: uppercase;
+  font-family: "Yeseva One", cursive;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem;
+  margin-top: 0;
+}
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 37.142rem;
+  margin: auto;
+}
+.footer__input {
+  padding-top: 0.1rem;
+}
+.footer__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 44%;
+  margin-bottom: 3.2rem;
+}
+.footer__input-group--full--width {
+  flex-basis: 100%;
+  margin-bottom: 1.9rem;
+}
+.footer__policy {
+  flex-basis: 100%;
+  margin-bottom: 3.6rem;
+}
+.footer__button {
+  padding: 17px 66px;
+  margin: auto;
+}
+.footer__menu {
+  background-color: #131313;
+  padding: 4.285rem 0;
 }
 
 .modal {
@@ -837,6 +976,9 @@ img {
 }
 .modal__input {
   margin-bottom: 3.428rem;
+}
+.modal__input--light::placeholder {
+  color: white;
 }
 .modal__input:last-of-type {
   margin-bottom: 1rem;
@@ -925,6 +1067,35 @@ img {
     display: block;
     min-width: 22.86rem;
     margin-bottom: 1.85rem;
+  }
+
+  .control {
+    background-color: #131313;
+    color: white;
+  }
+  .control__input-group {
+    flex-basis: 100%;
+    margin-bottom: 4.5rem;
+  }
+  .control__input-group::last-of-type {
+    margin-bottom: 1.92rem;
+  }
+  .control__label {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .control__policy {
+    display: flex;
+    margin-bottom: 4.45rem;
+    margin-top: -3rem;
+    margin-left: -1rem;
+  }
+  .control__button {
+    order: 1;
+    flex-basis: 100%;
+    font-size: 1.07rem;
+  }
+  .control__form {
+    margin-bottom: -6.8rem;
   }
 }
 @media screen and (max-height: 550px) {
