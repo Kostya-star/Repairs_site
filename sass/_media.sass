@@ -16,6 +16,29 @@
       display: none
     &__content
       margin-left: 0
+  .clients
+    &-item  
+      width: 70%
+      &__heading
+        &__img
+          border-radius: 5rem
+          padding: 0.5rem 0.5rem
+      &__properties
+        display: flex
+        flex-direction: column
+        &__first
+          display: flex
+          justify-content: center
+          width: 100%  
+          margin-bottom: 1rem
+          span
+            padding-left: 3rem
+        &__second
+          display: flex
+          justify-content: center
+          width: 100%  
+          span
+            padding-left: 1.8rem    
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -40,6 +63,21 @@
       margin-bottom: -2rem
       &__item
         margin-bottom: 6rem 
+  .clients
+    &-wrapper
+      display: flex
+      flex-direction: column
+    &-item
+      margin: 0 auto
+      margin-bottom: 4rem
+      &__heading
+        display: flex
+        justify-content: center
+      &__description
+        margin: 0 auto  
+      &__properties
+        display: flex
+        flex-direction: column      
 
 @media screen and ( max-width: 570px  )       
   .section

@@ -964,6 +964,79 @@ img {
   background-color: #E3B873;
 }
 
+.clients {
+  padding-bottom: 22.2rem;
+  background: url("../img/team&clients-bg.png") repeat;
+}
+.clients__section-title__description {
+  max-width: 25.71rem;
+}
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-item {
+  flex-basis: 30%;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+}
+.clients-item__heading {
+  display: flex;
+  align-items: center;
+}
+.clients-item__heading__img {
+  border-radius: 4.5rem;
+  padding: 1.35rem 1.45rem;
+}
+.clients-item__heading__name {
+  font-size: 1.28rem;
+  max-width: 14.07rem;
+  font-family: "Yeseva One";
+}
+.clients-item__description {
+  max-width: 23.14rem;
+  line-height: 1.92rem;
+  font-size: 1.07rem;
+  padding-left: 1.42rem;
+  color: #959595;
+  margin-bottom: 3.25rem;
+}
+.clients-item__description p {
+  margin-top: 0;
+}
+.clients-item__properties {
+  display: flex;
+  margin-bottom: -1.5rem;
+}
+.clients-item__properties__first {
+  display: flex;
+  align-items: center;
+  background-color: #E3B873;
+  padding: 0.5rem 1.5rem;
+  margin-right: 1px;
+}
+.clients-item__properties__first img {
+  margin-right: 0.5rem;
+}
+.clients-item__properties__first span {
+  font-size: 1.21rem;
+  font-family: "Yeseva One";
+  color: white;
+}
+.clients-item__properties__second {
+  display: flex;
+  align-items: center;
+  background-color: #E3B873;
+  padding: 0.7rem 1.9rem;
+}
+.clients-item__properties__second img {
+  margin-right: 0.5rem;
+}
+.clients-item__properties__second span {
+  font-size: 1.21rem;
+  font-family: "Yeseva One";
+  color: white;
+}
+
 .footer {
   padding-top: 3rem;
   background: #131313 url("../img/footer-bg.jpg") center/cover no-repeat;
@@ -974,6 +1047,7 @@ img {
   margin: auto;
   margin-bottom: 3.714rem;
   padding: 2.5rem;
+  margin-top: -18.5rem;
 }
 .footer__title {
   text-transform: uppercase;
@@ -1015,6 +1089,9 @@ img {
 .footer__menu {
   background-color: #131313;
   padding: 4.285rem 0;
+}
+.footer__map {
+  margin-bottom: 4rem;
 }
 
 .modal {
@@ -1116,6 +1193,35 @@ input.invalid {
   .hero__content {
     margin-left: 0;
   }
+
+  .clients-item {
+    width: 70%;
+  }
+  .clients-item__heading__img {
+    border-radius: 5rem;
+    padding: 0.5rem 0.5rem;
+  }
+  .clients-item__properties {
+    display: flex;
+    flex-direction: column;
+  }
+  .clients-item__properties__first {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .clients-item__properties__first span {
+    padding-left: 3rem;
+  }
+  .clients-item__properties__second {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .clients-item__properties__second span {
+    padding-left: 1.8rem;
+  }
 }
 @media screen and (max-width: 760px) {
   .row {
@@ -1149,6 +1255,26 @@ input.invalid {
   }
   .team-block__item {
     margin-bottom: 6rem;
+  }
+
+  .clients-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .clients-item {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .clients-item__heading {
+    display: flex;
+    justify-content: center;
+  }
+  .clients-item__description {
+    margin: 0 auto;
+  }
+  .clients-item__properties {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 570px) {
